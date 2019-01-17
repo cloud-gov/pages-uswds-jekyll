@@ -1,8 +1,7 @@
 ---
-title: Example Page with Sidebar
+title: Example Page with Sidenav
 layout: page
 sidenav: true
-permalink: /example-page-with-sidebar
 ---
 
 # Section heading (h1)
