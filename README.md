@@ -2,7 +2,7 @@
 
 This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using  [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a reference implementation and starter kit for Federalist sites.
 
-If you're interested in using Gatsby for your site, checkout 
+If you're interested in using Gatsby for your site, checkout [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby)
 
 
 **WARNING** This is experimental.
