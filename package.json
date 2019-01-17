@@ -10,7 +10,7 @@
     "clean": "rm -r node_modules/; rm -rf assets/"
   },
   "author": "",
-  "license": "ISC",
+  "license": "CC0-1.0",
   "dependencies": {
     "uswds": "github:uswds/uswds#release-2.0.0-beta.4"
   }
