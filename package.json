@@ -5,7 +5,7 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install; cp -r node_modules/uswds/dist/* assets/",
+    "build": "npm install; mkdir -p assets; cp -r node_modules/uswds/dist/* assets/",
     "federalist": "npm run build; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/;",
     "clean": "rm -r node_modules/"
   },
