@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install; cp -r node_modules/uswds/dist assets",
-    "federalist": "npm run build; ls -r assets; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/; ls -r assets",
+    "federalist": "npm run build; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/; ls -r assets",
     "clean": "rm -r node_modules/; rm -rf assets/"
   },
   "author": "",
