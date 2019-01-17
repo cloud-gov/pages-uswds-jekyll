@@ -5,8 +5,8 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install; cp -r node_modules/uswds/dist assets",
-    "federalist": "npm run build;pwd;ls; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/; ls -r assets",
+    "build": "npm install;mkdir assets; cp -r node_modules/uswds/dist/* assets/",
+    "federalist": "npm run build;pwd;ls assets;ls src; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/; ls -r assets",
     "clean": "rm -r node_modules/; rm -rf assets/"
   },
   "author": "",
