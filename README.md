@@ -61,11 +61,12 @@ permalink: /example-page-with-sidebar
 
 ## How to edit
 - We try to keep configuration options to a minimum so you can easily remove functionality, but you can review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They make reference to the agency name and contact information. The advanced options at the bottom should be changed only if you know what you know what you're doing.
-- Do not edit files in the `assets/` folder. This folder is reserved for serving assets once the sites is compiled. If you want add your own custom code, add and edit files `src/` and mirror the `assets/` folder. This will keep the code repository small and not include large libraries into your code. If you look at `package.json` you will see that the `npm run federalist` command will copy the contents from `src/` and move it over to `assets/` folder in the build process. If you want more advanced functionality, you should look into using [Webpack](https://webpack.js.org/concepts/configuration/).
-- Do not edit files in the `_site/` folder. These files are automatically generated and any changes you make will be destroyed.
-- You will only need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
+- Do not edit files in the `assets/` folder. This folder is reserved for serving assets once the sites is compiled. If you want add your own custom code, add and edit files in `src/`, ideally mirroring the `assets/` folder structure. This will keep the code repository small and not include unneccessary files. 
+- If you look at `package.json` you will see that the `npm run federalist` command will copy the contents from `src/` and move it over to `assets/` folder during the build process. If you want more advanced functionality, you should look into using [Webpack](https://webpack.js.org/concepts/configuration/).
+- Do not edit files in the `_site/` folder. These files are automatically generated and changes you make there will be destroyed.
+- You will most certainly need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
-- `_layouts/` may require the least amount of editing since they are primiarly responsible for printing the content.
+- `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
 - `news/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Non-developers should focus only on `_posts` and `_pages`
 
@@ -88,5 +89,7 @@ permalink: /example-page-with-sidebar
 
 ## Technologies you should be familiarize yourself with
 
-- [Jekyll](https://jekyllrb.com/docs/assets/)
+- [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
 - [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
+- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
+- [Jekyll Search](https://github.com/18F/jekyll_pages_api_search/)
