@@ -1,0 +1,62 @@
+<header class="usa-header usa-header-extended" role="banner">
+   <div class="usa-navbar">
+      <div class="usa-logo" id="extended-logo">
+         <em class="usa-logo-text"><a href="{{site.url}}{{site.baseurl}}" title="Home" aria-label="Home">{{site.title}}</a></em>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+   </div>
+   <nav role="navigation" class="usa-nav">
+      <div class="usa-nav-inner">
+         <button class="usa-nav-close"><img src="/assets/img/close.svg" alt="close"></button>
+         <ul class="usa-nav-primary usa-accordion">
+
+            <li class="usa-nav-primary-item">
+               <a class="usa-nav-link" href="{{site.url}}{{site.baseurl}}{{site.baseurl}}/"><span>Home</span></a>
+            </li>
+
+            <li class="usa-nav-primary-item">
+               <a class="usa-nav-link" href="{{site.url}}{{site.baseurl}}{{site.baseurl}}/news"><span>News</span></a>
+            </li>
+
+            <li class="usa-nav-primary-item">
+               <a class="usa-nav-link" href="{{site.url}}{{site.baseurl}}{{site.baseurl}}/example-page"><span>About</span></a>
+            </li>
+            <li class="usa-nav-primary-item">
+               <a class="usa-nav-link" href="{{site.url}}{{site.baseurl}}{{site.baseurl}}/example-page-with-sidebar"><span>About with Sidebar</span></a>
+            </li>
+            <li class="usa-nav-primary-item">
+               <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-nav-section-one"><span>Example Submenu</span></button>
+               <ul id="extended-nav-section-one" class="usa-nav-submenu">
+                  <li class="usa-nav-submenu-item">
+                     <a href="#">Navigation link</a>
+                  </li>
+                  <li class="usa-nav-submenu-item">
+                     <a href="#">Navigation link</a>
+                  </li>
+                  <li class="usa-nav-submenu-item">
+                     <a href="#">Navigation link</a>
+                  </li>
+               </ul>
+            </li>
+
+         </ul>
+         <div class="usa-nav-secondary">
+            <ul class="usa-nav-secondary-links">
+               <li class="usa-nav-secondary-item">
+                  <a href="">Secondary link</a>
+               </li>
+               <li class="usa-nav-secondary-item">
+                  <a href="">Another secondary link</a>
+               </li>
+            </ul>
+            <form class="usa-search usa-search-small ">
+               <div role="search">
+                  <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+                  <input class="usa-input" id="extended-search-field-small" type="search" name="search">
+                  <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </nav>
+</header>

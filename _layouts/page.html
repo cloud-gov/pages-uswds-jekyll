@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="grid-row grid-gap">
+
+  {% if page.sidenav == true %}
+    {% include sidenav.html %}
+  {% endif %}
+
+  <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+    {{ content }}
+  </div>
+</div>

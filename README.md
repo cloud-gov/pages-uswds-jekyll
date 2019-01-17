@@ -37,6 +37,17 @@ datafile: jobs
 
 The reference to `datafile` referers to the name of the file in `_data/jobs.yml` and loops through the values. Feel free to modify this as needed.
 
+*Complete:*  There are two different kinds of `pages`, one does not have a side bar navigation, and the other uses `_includes/sidenav.html`. You can enable this option by adding `sidenav: true` to your page front matter.
+
+```
+---
+title: Example Page with Sidebar
+layout: page
+sidenav: true
+permalink: /example-page-with-sidebar
+---
+```
+
 
 *In Progress:* Searchable site. Integration with [`jekyll_pages_api_search`](https://github.com/18F/jekyll_pages_api_search) is in progress, but you can setup [search.gov](https://search.gov).
 
@@ -44,7 +55,8 @@ The reference to `datafile` referers to the name of the file in `_data/jobs.yml`
 
 ## How to edit
 - We try to keep configuration options to a minimum so you can easily remove functionality, but you can review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They make reference to the agency name and contact information. The advanced options at the bottom should be changed only if you know what you know what you're doing.
-- Do not edit files from the Web Design System directly. That means that `assets/css/uswds.css` and `assets/js/uswds.js` are offlimits. This will make it easier for you to update the Web Design System safely. Instead, you should either 1) create new files in `assets/js/app.js` and `assets/css/app.css` that overide USWDS functionality 2) Or you can create a folder called `src/`, add your custom Javascript and CSS, and include a [build process](https://webpack.js.org/concepts/configuration/#simple-configuration) that outputs compressed code into `assets/js/bundle.js` and `assets/css/bundle.css`. You can then include the compiled code in `_includes/header.html`.
+- Do not edit files in the `assets/` folder. This folder is reserved for serving assets once the sites is compiled. If you want add your own custom code, add and edit files `src/` and mirror the `assets/` folder. This will keep the code repository small and not include large libraries into your code. If you look at `package.json` you will see that the `npm run federalist` command will copy the contents from `src/` and move it over to `assets/` folder in the build process. If you want more advanced functionality, you should look into using [Webpack](https://webpack.js.org/concepts/configuration/).
+- Do not edit files in the `_site/` folder. These files are automatically generated and any changes you make will be destroyed.
 - You will need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
 - `_layouts/` may require the least amount of editing since they are primiarly responsible for printing the content.
@@ -58,8 +70,8 @@ The reference to `datafile` referers to the name of the file in `_data/jobs.yml`
 ## Installation
 `git clone https://github.com/18F/federalist-uswds-jekyll`
 `cd federalist-uswds-jekyll`
-`npm install` # this installs the latest version of the web design system
-`bundle install` # this installs the required Ruby library
+`npm run federalist`        # this installs the latest version of the web design system
+`bundle install`            # this installs the required Ruby library
 `bundle exec jekyll serve`
 
 

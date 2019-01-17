@@ -1,0 +1,38 @@
+---
+layout: default
+pagination: 
+  enabled: true
+---
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <div class="grid-row grid-gap margin-bottom-8">
+    <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+    <h1 class="title"><a class="underline-base-dark text-no-underline" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h1>
+      <em class="date">{{ post.date | date: '%B %d, %Y' }}</em>
+
+      {% comment %} 
+        We default to using post.content, but you can also use post.excerpt.
+        If you use excerpt then you have to make sure the content is on each 
+        post header
+      {% endcomment %}
+
+      {{ post.content }}
+    </div>
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="grid-row">
+  <div class="tablet:grid-col">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+    {% endif %}
+  
+  </div>
+  <div class="tablet:grid-col">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+    {% endif %}
+  </div>
+</div>

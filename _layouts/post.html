@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="grid-row grid-gap">
+  <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+    <h1 class="title"><a class="underline-base-dark text-no-underline" href="{{site.baseurl}}{{post.url}}">{{page.title}}</a></h1>
+    <em class="date">{{ page.date | date: '%B %d, %Y' }}</em>
+    {{ content }}
+  </div>
+</div>

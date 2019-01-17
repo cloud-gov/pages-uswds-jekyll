@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="grid-row grid-gap">
+
+  <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+    {{ content }}
+    <ul>
+        {% for item in site.data[page.datafile] %}
+        <li><a href="{{ job.url }}"><b>{{ item.name }}</b></a> - {{item.description}}</li>
+        {% endfor %}    
+    </ul>
+  </div>
+</div>
