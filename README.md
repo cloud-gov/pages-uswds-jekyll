@@ -57,10 +57,10 @@ permalink: /example-page-with-sidebar
 - We try to keep configuration options to a minimum so you can easily remove functionality, but you can review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They make reference to the agency name and contact information. The advanced options at the bottom should be changed only if you know what you know what you're doing.
 - Do not edit files in the `assets/` folder. This folder is reserved for serving assets once the sites is compiled. If you want add your own custom code, add and edit files `src/` and mirror the `assets/` folder. This will keep the code repository small and not include large libraries into your code. If you look at `package.json` you will see that the `npm run federalist` command will copy the contents from `src/` and move it over to `assets/` folder in the build process. If you want more advanced functionality, you should look into using [Webpack](https://webpack.js.org/concepts/configuration/).
 - Do not edit files in the `_site/` folder. These files are automatically generated and any changes you make will be destroyed.
-- You will need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
+- You will only need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
 - `_layouts/` may require the least amount of editing since they are primiarly responsible for printing the content.
-- `news/index.html` can be edited, but be careful. It will the pagination system for the posts. If you do edit it, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
+- `news/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Non-developers should focus only on `_posts` and `_pages`
 
 ## Known Issues
