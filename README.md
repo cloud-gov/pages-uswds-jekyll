@@ -1,15 +1,16 @@
 # Federalist + U.S. Web Design System + Jekyll
 
-This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using  [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a reference implementation and starter kit for Federalist sites.
+This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using  [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation Federalist websites.
 
-If you're interested in using Javascript, instead of Ruby, for your site, checkout [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby).
+This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby. If you prefer to use Javascript, check out [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby), which uses [Gatsby](https://gatsbyjs.org) site engine.
+
+This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with a few configuration options.
+
 
 
 **WARNING** This is experimental.
 
-This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). 
-
-The standards require that a website or digital service:
+This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
 
 - is accessible to individuals with disabilities;
 - has a consistent appearance;
@@ -19,9 +20,6 @@ The standards require that a website or digital service:
 - “is designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors, and continually test the website, web-based form, web-based application, or digital service to ensure that user needs are addressed;”
 - allows for user customization; and
 - is mobile-friendly.
-
-
-This project assumes experience with Ruby and Javascript.
 
 ## Key Functionality
 This repository contains the following examples and functionality:
