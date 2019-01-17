@@ -5,7 +5,7 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install;mkdir assets;mkdir assets/js;mkdir assets/css; echo \"node_modules/uswds/dist/\"; ls node_modules/uswds/dist; cp -r node_modules/uswds/dist/ assets/",
+    "build": "npm install;mkdir assets;mkdir assets/js;mkdir assets/css; echo \"node_modules/uswds/dist\"; ls node_modules/uswds; cp -r node_modules/uswds/dist/ assets/",
     "federalist": "npm run build;echo \"blah ls\";ls;echo \"blah pwd\";pwd;echo \"blah assets\";ls assets;echo \"blah src\";ls src; cp -r src/js/* assets/js/; cp -r src/css/* assets/css/; echo \"blah assets/css\";ls -r assets/css; echo \"blah assets/js\";ls -r assets/js",
     "clean": "rm -r node_modules/; rm -rf assets/"
   },
