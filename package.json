@@ -4,10 +4,16 @@
   "description": "Federalist using USWDS+Jekyll",
   "main": "src/js/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p assets; cp -R node_modules/uswds/dist/* assets/",
-    "federalist": "npm run build; cp -R src/js/* assets/js/; cp -R src/css/* assets/css/;",
-    "clean": "rm -r node_modules/; rm -rf assets/"
+    "build": "npm run build:uswds; npm run build:js; npm run build:css; npm run build:jekyll",
+    "build:css": "cp -R src/css/* assets/css/;",
+    "build:jekyll": "bundle exec jekyll build",
+    "build:js": "cp -R src/js/* assets/js/",
+    "build:uswds": "mkdir -p assets; cp -R node_modules/uswds/dist/* assets/",
+    "clean": "rm -rf assets/; rm -rf _site",
+    "federalist": "npm run build:uswds; npm run build:js; npm run build:css",
+    "postinstall": "bundle install",
+    "start": "bundle exec jekyll serve",
+    "test": "bundle exec htmlproofer _site"
   },
   "author": "",
   "license": "CC0-1.0",

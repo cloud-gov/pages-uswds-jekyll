@@ -76,15 +76,32 @@ permalink: /example-page-with-sidebar
 
 ## Installation
 
-`git clone https://github.com/18F/federalist-uswds-jekyll`
+Clone the repository.
 
-`cd federalist-uswds-jekyll`
+    $ git clone https://github.com/18F/federalist-uswds-jekyll
+    $ cd federalist-uswds-jekyll
 
-`npm run federalist`        # this installs the latest version of the web design system
+Install the Node.js dependencies.
 
-`bundle install`            # this installs the required Ruby library
+    $ npm install
 
-`bundle exec jekyll serve`
+Build the site.
+
+    $ npm run build
+
+Run the site locally.
+
+    $ npm start
+
+Open your web browser to [localhost:4000](http://localhost:4000/) to view your
+site.
+
+After you make changes, be sure to run the tests.
+
+    $ npm test
+
+Note that when built by Federalist, `npm run federalist` is used instead of the
+`build` script.
 
 
 ## Technologies you should be familiarize yourself with
