@@ -55,6 +55,8 @@ permalink: /example-page-with-sidebar
 
 *In Progress:* Searchable site. Integration with [`jekyll_pages_api_search`](https://github.com/18F/jekyll_pages_api_search) is in progress, but you can setup [search.gov](https://search.gov).
 
+*Pending:* Examples of how you can include large data files into your site and how to query and display the data.
+
 
 
 ## How to edit
