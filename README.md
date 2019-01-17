@@ -1,3 +1,12 @@
+<!--
+  Federalist recommends you use Continuous Integration to automatically test
+  and validate any new changes to your site. CircleCI is free for open source
+  projcets. You should replace this badge with your own.
+
+  https://circleci.com/
+-->
+[![CircleCI](https://circleci.com/gh/18F/federalist-themes.svg?style=svg)](https://circleci.com/gh/18F/federalist-themes)
+
 # Federalist + U.S. Web Design System + Jekyll
 
 This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation Federalist websites.
