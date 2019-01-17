@@ -68,10 +68,15 @@ permalink: /example-page-with-sidebar
 - To set the underline indicator (`usa-current`) on the top menu, we need Javascript to match the routing. 
 
 ## Installation
+
 `git clone https://github.com/18F/federalist-uswds-jekyll`
+
 `cd federalist-uswds-jekyll`
+
 `npm run federalist`        # this installs the latest version of the web design system
+
 `bundle install`            # this installs the required Ruby library
+
 `bundle exec jekyll serve`
 
 
