@@ -2,7 +2,6 @@
 title: Example Page
 layout: page
 sidenav: false
-permalink: /example-page
 ---
 
 # Section heading (h1)

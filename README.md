@@ -1,3 +1,12 @@
+<!--
+  Federalist recommends you use Continuous Integration to automatically test
+  and validate any new changes to your site. CircleCI is free for open source
+  projcets. You should replace this badge with your own.
+
+  https://circleci.com/
+-->
+[![CircleCI](https://circleci.com/gh/18F/federalist-themes.svg?style=svg)](https://circleci.com/gh/18F/federalist-themes)
+
 # Federalist + U.S. Web Design System + Jekyll
 
 This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation Federalist websites.
@@ -76,15 +85,32 @@ permalink: /example-page-with-sidebar
 
 ## Installation
 
-`git clone https://github.com/18F/federalist-uswds-jekyll`
+Clone the repository.
 
-`cd federalist-uswds-jekyll`
+    $ git clone https://github.com/18F/federalist-uswds-jekyll
+    $ cd federalist-uswds-jekyll
 
-`npm run federalist`        # this installs the latest version of the web design system
+Install the Node.js dependencies.
 
-`bundle install`            # this installs the required Ruby library
+    $ npm install
 
-`bundle exec jekyll serve`
+Build the site.
+
+    $ npm run build
+
+Run the site locally.
+
+    $ npm start
+
+Open your web browser to [localhost:4000](http://localhost:4000/) to view your
+site.
+
+After you make changes, be sure to run the tests.
+
+    $ npm test
+
+Note that when built by Federalist, `npm run federalist` is used instead of the
+`build` script.
 
 
 ## Technologies you should be familiarize yourself with
