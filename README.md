@@ -5,7 +5,7 @@
 
   https://circleci.com/
 -->
-[![CircleCI](https://circleci.com/gh/18F/federalist-themes.svg?style=svg)](https://circleci.com/gh/18F/federalist-themes)
+[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
 
 # Federalist + U.S. Web Design System + Jekyll
 
