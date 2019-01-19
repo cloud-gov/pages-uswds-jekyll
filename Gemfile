@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-redirect-from'
   gem 'jekyll-paginate-v2'  
+  gem 'jekyll-sitemap'
   # gem 'jekyll_pages_api_search'
 end
 
