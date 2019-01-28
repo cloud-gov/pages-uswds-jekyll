@@ -1,0 +1,14 @@
+---
+---
+
+// Import the US Web Design System minified CSS
+@import "../uswds/css/uswds.min.css";
+// Alternatively, you could import the SCSS files directly for USWDS mixins and variables.
+//$theme-font-path:   '../uswds/fonts';
+//$theme-image-path:  '../uswds/img';
+//@import "uswds/uswds";
+
+
+// This is the main CSS file. You can write your SCSS/SASS in _sass and import
+// them here. You probably want to load them _after_ uswds in order to override
+// any uswds styles.
