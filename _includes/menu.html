@@ -49,13 +49,7 @@
                   <a href="">Another secondary link</a>
                </li>
             </ul>
-            <form class="usa-search usa-search-small ">
-               <div role="search">
-                  <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
-                  <input class="usa-input" id="extended-search-field-small" type="search" name="search">
-                  <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
-               </div>
-            </form>
+            {% include searchgov/form.html affiliate=site.searchgov_affiliate %}
          </div>
       </div>
    </nav>

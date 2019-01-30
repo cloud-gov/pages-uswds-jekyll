@@ -35,7 +35,13 @@ google_analytics_ua: UA-????????-??
 # Configuration for DAP, add your agency ID here:
 dap_agency: GSA
 
-  
+
+# Search.gov configuration
+#
+# 1. Create an account with Search.gov https://search.usa.gov/signup
+# 2. Add a new site.
+# 3. Add your site/affiliate name here.
+searchgov_affiliate: federalist
 
 ##########################################################################################
 # The values below here are more advanced and should only be 
