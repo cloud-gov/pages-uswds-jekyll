@@ -17,7 +17,7 @@ This project assumes that you are comfortable editing source code. If you prefer
 
 
 
-**WARNING** This is experimental.
+**WARNING** This is a pre-1.0 code. You can keep track of progress here: https://github.com/18F/federalist-uswds-jekyll/issues/14
 
 This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
 
