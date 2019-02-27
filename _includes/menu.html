@@ -8,46 +8,34 @@
    <nav role="navigation" class="usa-nav">
       <div class="usa-nav-inner">
         <button class="usa-nav-close"><img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close"></button>
-         <ul class="usa-nav-primary usa-accordion">
-
-            <li class="usa-nav-primary-item">
-               <a class="usa-nav-link" href="{{site.baseurl}}/"><span>Home</span></a>
-            </li>
-
-            <li class="usa-nav-primary-item">
-               <a class="usa-nav-link" href="{{site.baseurl}}/news"><span>News</span></a>
-            </li>
-
-            <li class="usa-nav-primary-item">
-               <a class="usa-nav-link" href="{{site.baseurl}}/example-page"><span>Example</span></a>
-            </li>
-            <li class="usa-nav-primary-item">
-               <a class="usa-nav-link" href="{{site.baseurl}}/example-page-with-sidenav"><span>Example with sidenav</span></a>
-            </li>
-            <li class="usa-nav-primary-item">
-               <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-nav-section-one"><span>Example Submenu</span></button>
-               <ul id="extended-nav-section-one" class="usa-nav-submenu">
-                  <li class="usa-nav-submenu-item">
-                     <a href="">Navigation link</a>
-                  </li>
-                  <li class="usa-nav-submenu-item">
-                     <a href="">Navigation link</a>
-                  </li>
-                  <li class="usa-nav-submenu-item">
-                     <a href="">Navigation link</a>
-                  </li>
-               </ul>
-            </li>
-
-         </ul>
+          <ul class="usa-nav-primary usa-accordion">
+            {% for nav_item in include.primary_navigation %}
+              {% unless nav_item.children %}
+                <li class="usa-nav-primary-item">
+                  <a class="usa-nav-link{% if page.url == nav_item.url %} usa-current{% endif %}" href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
+                </li>
+              {% else %}
+                {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+                <li class="usa-nav-primary-item">
+                  <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="{{ nav_id }}"><span>{{ nav_item.name | escape }}</span></button>
+                  <ul id="{{ nav_id }}" class="usa-nav-submenu">
+                    {% for subnav_item in nav_item.children %}
+                    <li class="usa-nav-submenu-item">
+                      <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
          <div class="usa-nav-secondary">
             <ul class="usa-nav-secondary-links">
-               <li class="usa-nav-secondary-item">
-                  <a href="">Secondary link</a>
-               </li>
-               <li class="usa-nav-secondary-item">
-                  <a href="">Another secondary link</a>
-               </li>
+              {% for nav_item in include.secondary_navigation %}
+                <li class="usa-nav-secondary-item">
+                  <a href="{{ nav_item.url | prepend: site.baseurl }}">{{ nav_item.name | escape }}</a>
+                </li>
+              {% endfor %}
             </ul>
             {% include searchgov/form.html affiliate=site.searchgov_affiliate %}
          </div>

@@ -35,6 +35,30 @@ google_analytics_ua: UA-????????-??
 # Configuration for DAP, add your agency ID here:
 dap_agency: GSA
 
+# Site Navigation
+primary_navigation:
+  - name: Home
+    url: /
+  - name: News
+    url: /news/
+  - name: Example
+    url: /example-page/
+  - name: Example with sidenav
+    url: /example-page-with-sidenav/
+  - name: Example submenu
+    children:
+      - name: Navigation link
+        url: '#main-content'
+      - name: Navigation link
+        url: '#main-content'
+      - name: Navigation link
+        url: '#main-content'
+
+secondary_navigation:
+  - name: Secondary link
+    url: '#main-content'
+  - name: Another secondary link
+    url: '#main-content'
 
 # Search.gov configuration
 #
