@@ -35,7 +35,7 @@ pagination:
     <!-- Pagination links -->
     <div class="grid-row padding-top-2">
       <div class="tablet:grid-col-4 text-left">
-        {% if paginator.next_page %}
+        {% if paginator.previous_page %}
           <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="text-no-underline text-bold">&lsaquo; Previous {{ paginator.per_page }} Posts</a>
         {% endif %}
       </div>
