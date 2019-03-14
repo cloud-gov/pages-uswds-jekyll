@@ -4,6 +4,8 @@ layout: post
 date: January 14, 2019
 author: Abraham Lincoln
 excerpt: This is an excerpt
+image: hire-us.jpg
+image_alt_text: Hire Us
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus.
