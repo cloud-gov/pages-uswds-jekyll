@@ -62,13 +62,11 @@ pagination:
 
   <aside class="desktop:grid-col-fill margin-top-4 padding-right-4">
     <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
-      <h4 class="">A list of links</h4>
+      <h4 class="">Most Recent Posts</h4>
       <ul class="usa-unstyled-list padding-top-2">
-        <li class="padding-bottom-1"><a href="{{site.baseurl}}{{blog.url}}">Depends on if these are categorized</a></li>
-        <li class="padding-bottom-1"><a href="{{site.baseurl}}{{blog.url}}">Topic 1</a></li>
-        <li class="padding-bottom-1"><a href="{{site.baseurl}}{{blog.url}}">Topic 2</a></li>
-        <li class="padding-bottom-1"><a href="{{site.baseurl}}{{blog.url}}">Topic 3</a></li>
-        <li class="padding-bottom-1"><a href="{{site.baseurl}}{{blog.url}}">Topic 4</a></li>
+        {% for post in site.posts limit:3 %}
+          <li class="padding-bottom-1"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
+        {% endfor %}
       </ul>
     </div>
     <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
