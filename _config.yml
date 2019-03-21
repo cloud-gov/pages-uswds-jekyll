@@ -42,9 +42,9 @@ primary_navigation:
   - name: Blog
     url: /blog/
   - name: Document
-    url: /document-page/
+    url: /document/
   - name: Document with sidenav
-    url: /document-page-with-sidenav/
+    url: /document-with-sidenav/
   - name: Document submenu
     children:
       - name: Navigation link
