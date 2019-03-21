@@ -17,7 +17,7 @@ This project assumes that you are comfortable editing source code. If you prefer
 
 
 
-**WARNING** This is experimental.
+**WARNING** This is a pre-1.0 code. You can keep track of progress here: https://github.com/18F/federalist-uswds-jekyll/issues/14
 
 This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
 
@@ -62,7 +62,10 @@ permalink: /example-page-with-sidebar
 ```
 
 
-*In Progress:* Searchable site. Integration with [`jekyll_pages_api_search`](https://github.com/18F/jekyll_pages_api_search) is in progress, but you can setup [search.gov](https://search.gov).
+*In Progress:* Searchable site. Integration with
+[`jekyll_pages_api_search`](https://github.com/18F/jekyll_pages_api_search) is
+in progress, but you can setup site search with [Search.gov](https://search.gov)
+by adding your affiliate name to `_config.yml`.
 
 *Pending:* Examples of how you can include large data files into your site and how to query and display the data.
 

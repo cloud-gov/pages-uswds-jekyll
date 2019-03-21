@@ -1,5 +1,5 @@
 ---
-title: Example Page with Sidenav
+title: Document Page with Sidenav
 layout: page
 sidenav: true
 ---
