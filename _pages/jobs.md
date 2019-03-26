@@ -1,5 +1,5 @@
 ---
-title: Example Page
+title: Jobs
 layout: list
 permalink: /jobs
 datafile: jobs

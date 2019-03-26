@@ -1,5 +1,5 @@
 ---
-title: Example Page
+title: Document
 layout: page
 sidenav: false
 ---
