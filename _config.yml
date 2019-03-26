@@ -41,11 +41,11 @@ primary_navigation:
     url: /
   - name: Blog
     url: /blog/
-  - name: Example
-    url: /example-page/
-  - name: Example with sidenav
-    url: /example-page-with-sidenav/
-  - name: Example submenu
+  - name: Document
+    url: /document/
+  - name: Document with sidenav
+    url: /document-with-sidenav/
+  - name: Document submenu
     children:
       - name: Navigation link
         url: '#main-content'
