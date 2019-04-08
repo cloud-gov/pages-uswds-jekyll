@@ -2,6 +2,7 @@
 To modify the menu system, you are welcome to edit this HTML directly or you can look inside _config.yml 
 where we provide an easy way to manage your navigation system
 {% endcomment %}
+
 <header class="usa-header usa-header--extended" role="banner">
    <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
@@ -15,9 +16,11 @@ where we provide an easy way to manage your navigation system
           <ul class="usa-nav__primary usa-accordion">
             {% for nav_item in include.primary_navigation %}
               {% unless nav_item.children %}
+                {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
+                {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
                 <li class="usa-nav__primary-item">
-                  <a class="usa-nav__link{% if page.url == nav_item.url %} usa-current{% endif %}" href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
-                </li>
+                  <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}" href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
+              </li>
               {% else %}
                 {% assign nav_id = 'primary-nav-' | append: forloop.index %}
                 <li class="usa-nav__primary-item">
