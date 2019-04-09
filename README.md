@@ -9,15 +9,11 @@
 
 # Federalist + U.S. Web Design System + Jekyll
 
-This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation Federalist websites.
+This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation for Federalist websites.
 
 This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby. If you prefer to use Javascript, check out [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby), which uses [Gatsby](https://gatsbyjs.org) site engine.
 
-This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with a few configuration options.
-
-
-
-**WARNING** This is a pre-1.0 code. You can keep track of progress here: https://github.com/18F/federalist-uswds-jekyll/issues/14
+This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with configuration files.
 
 This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
 
@@ -62,13 +58,7 @@ permalink: /example-page-with-sidebar
 ```
 
 
-*In Progress:* Searchable site. Integration with
-[`jekyll_pages_api_search`](https://github.com/18F/jekyll_pages_api_search) is
-in progress, but you can setup site search with [Search.gov](https://search.gov)
-by adding your affiliate name to `_config.yml`.
-
-*Pending:* Examples of how you can include large data files into your site and how to query and display the data.
-
+*Complete:* Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
 
 
 ## How to edit
@@ -82,9 +72,6 @@ by adding your affiliate name to `_config.yml`.
 - `news/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Non-developers should focus only on `_posts` and `_pages`
 
-## Known Issues
-- The search gem is not compatible with latest version of Jekyll. More information [here](https://github.com/18F/jekyll_pages_api_search/pull/41)
-- To set the underline indicator (`usa-current`) on the top menu, we need Javascript to match the routing. 
 
 ## Installation
 
