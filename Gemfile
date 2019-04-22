@@ -15,7 +15,7 @@ gem "jekyll", "~> 3.8.4"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-redirect-from'
-  gem 'jekyll-paginate-v2'  
+  gem 'jekyll-paginate-v2', "2.0"  
   gem 'jekyll-sitemap'
   # gem 'jekyll_pages_api_search'
 end
