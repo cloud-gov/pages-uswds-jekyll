@@ -1,17 +1,19 @@
 ---
-layout: default
+layout: main
 permalink: /blog/
 pagination:
   enabled: true
 ---
 
-<div id="blog" class="bg-primary-darker usa-content usa-intro padding-x-4 padding-y-6 margin-top-neg-3">
-  <h1 class="text-normal text-white margin-0">Blog</h1>
-  <span class="text-base-lighter padding-bottom-5 text-light">This is a description of the page.</span>
+<div id="blog" class="bg-primary-darker usa-content font-serif-lg padding-x-4 padding-y-6">
+  <div class="grid-container">
+    <h1 class="text-normal text-white margin-0">Blog</h1>
+    <span class="text-base-lighter padding-bottom-5 text-light">This is a description of the page.</span>
+  </div>
 </div>
-
+<div class="grid-container">
 <div class="grid-row">
-  <div class="desktop:grid-col-8 usa-prose desktop:padding-x-4">
+  <div class="desktop:grid-col-8 usa-prose padding-right-4">
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
       <div class="padding-bottom-5 margin-top-4 usa-prose border-bottom-05 border-base-lightest">
@@ -105,4 +107,5 @@ pagination:
 
 <div class="grid-row padding-top-4 tablet:padding-x-4">
   <a class="usa-link" href="#blog">Return to top</a>
+</div>
 </div>
