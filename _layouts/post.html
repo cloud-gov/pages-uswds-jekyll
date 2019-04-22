@@ -4,8 +4,12 @@ layout: default
 
 <div class="grid-row grid-gap">
   <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-    <h1 class="title"><a class="underline-base-dark text-no-underline" href="{{site.baseurl}}{{post.url}}">{{page.title}}</a></h1>
-    <em class="date">{{ page.date | date: '%B %d, %Y' }}</em>
+    <h1 class="title">{{page.title}}</h1>
+    <div class="text-base margin-bottom-2">
+        <div class="margin-top-neg-105">
+          By <span class="text-bold">{{ page.author }}</span> · {{ page.date | date: '%B %d, %Y' }}
+        </div>
+      </div>
     {{ content }}
   </div>
 </div>
