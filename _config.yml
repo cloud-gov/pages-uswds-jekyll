@@ -85,6 +85,9 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem

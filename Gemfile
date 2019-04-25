@@ -17,7 +17,12 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-paginate-v2', "2.0"  
   gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  
+  # jekyll_pages_api_search is useful gem, but needs updating
+  # to support the latest version of Jekyll
   # gem 'jekyll_pages_api_search'
+
 end
 
 
