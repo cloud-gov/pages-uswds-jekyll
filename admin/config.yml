@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: 18F/federalist-uswds-jekyll
-  branch: add_netlify_cms # Branch to update (optional; defaults to master)
   base_url: https://federalistapp-staging.18f.gov
   auth_endpoint: auth/github
 
