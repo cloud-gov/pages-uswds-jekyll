@@ -8,7 +8,7 @@ layout: default
     {{ content }}
     <ul>
         {% for item in site.data[page.datafile] %}
-        <li><a href="{{ job.url }}"><b>{{ item.name }}</b></a> - {{item.description}}</li>
+        <li><a href="{{ item.url }}"><b>{{ item.name }}</b></a>:  {{item.description}}</li>
         {% endfor %}    
     </ul>
   </div>
