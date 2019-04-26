@@ -29,16 +29,16 @@ This project strives to be compliant with requirements set by [21st Century IDEA
 ## Key Functionality
 This repository contains the following examples and functionality:
  
-*Complete:*  Publish blog posts, press releases, announcements, etc. To modify this code, check out `news/index.html`, which manages how the posts are listed. You should then check out `_layouts/post.html` to see how individual posts are structured.
+✅  Publish blog posts, press releases, announcements, etc. To modify this code, check out `blog/index.html`, which manages how the posts are listed. You should then check out `_layouts/post.html` to see how individual posts are structured.
 
-*Complete:*  Publish single one-off pages. Instead of creating lots of folders throughout the root directory, you should put single pages in `_pages` folder and change the `permalink` at the top of each page. Use sub-folders only when you really need to.
+✅ Publish single one-off pages. Instead of creating lots of folders throughout the root directory, you should put single pages in `_pages` folder and change the `permalink` at the top of each page. Use sub-folders only when you really need to.
 
-*Complete:*  Publish lists (for example: job listings, links, references), you can use the template `_layouts/list.html`. Just create a file in you `_pages` folder with the following options:
+✅  Publish data (for example: job listings, links, references), you can use the template `_layouts/data.html`. Just create a file in you `_pages` folder with the following options:
 
 ```
 ---
 title: Example Page
-layout: list
+layout: data
 permalink: /jobs
 datafile: jobs
 ---
@@ -46,7 +46,7 @@ datafile: jobs
 
 The reference to `datafile` referers to the name of the file in `_data/jobs.yml` and loops through the values. Feel free to modify this as needed.
 
-*Complete:*  There are two different kinds of `pages`, one does not have a side bar navigation, and the other uses `_includes/sidenav.html`. You can enable this option by adding `sidenav: true` to your page front matter.
+✅  There are two different kinds of `pages`, one does not have a side bar navigation, and the other uses `_includes/sidenav.html`. You can enable this option by adding `sidenav: true` to your page front matter.
 
 ```
 ---
@@ -58,7 +58,7 @@ permalink: /example-page-with-sidebar
 ```
 
 
-*Complete:* Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
+✅ Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
 
 
 ## How to edit
@@ -69,7 +69,7 @@ permalink: /example-page-with-sidebar
 - You will most certainly need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
 - `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
-- `news/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
+- `blog/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Non-developers should focus only on `_posts` and `_pages`
 
 
