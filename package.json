@@ -1,6 +1,6 @@
 {
   "name": "federalist-uswds-jekyll",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Federalist using USWDS+Jekyll",
   "main": "src/js/app.js",
   "scripts": {
@@ -20,6 +20,6 @@
   "license": "CC0-1.0",
   "dependencies": {
     "a11y": "^0.5.1",
-    "uswds": "^2.0.1"
+    "uswds": "^2.0.2"
   }
 }
