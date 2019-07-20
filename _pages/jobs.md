@@ -1,8 +1,8 @@
 ---
 title: Jobs
-layout: list
+layout: data
 permalink: /jobs
 datafile: jobs
 ---
 
-This is an example of using listing functionality.
+This is an example for list data file contents

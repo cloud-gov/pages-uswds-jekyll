@@ -3,52 +3,47 @@ You shouldn't have to edit this page very often. But if you want to modify some 
 site, this is the place to do it.
 {% endcomment %}
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
-  <head>
-    <!-- Basic Page Needs
-================================================== -->
+<!--[if lt IE 9]>
+<html class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-    <meta name="robots" content="noindex, nofollow">
-  
-
-<!-- Mobile Specific Metas
-================================================== -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Mobile Specific Metas
+    ================================================== -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and meta description
+    ================================================== -->
+  <title>{{site.title}}</title>
+  <meta property="og:title" content="{{site.title}}">
+  <meta name="description" content="{{site.description}}">
+  <meta property="og:description" content="{{site.description}}">
 
-<!-- Title and meta description
-================================================== -->
-  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{site.twitter}}" />
+  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:description" content="{{site.description}}" />
 
-<title>{{site.title}}</title>
-<meta property="og:title" content="{{site.title}}">
-<meta name="description" content="{{site.description}}">
-<meta property="og:description" content="{{site.description}}">
-
-<meta name="twitter:card" value="summary">
-<meta name="twitter:site" content="@{site.twitter}">
-<meta property="og:type" content="article">
-
-<link rel="canonical" href="{{site.baseurl}}/">
-<meta property="og:url" content="{{site.baseurl}}/">
-
-
-
-<!-- Favicons
-================================================== -->
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="{{site.baseurl}}/">
+  <meta property="og:url" content="{{site.baseurl}}/">
+  <!-- Favicons
+    ================================================== -->
   <!-- 128x128 -->
   <link rel="shortcut icon" type="image/ico" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon.ico">
   <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon.png">
-
   <!-- 192x192, as recommended for Android
-  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-  -->
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    -->
   <link rel="icon" type="image/png" sizes="192x192" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon-192.png">
-
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
   <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon-57.png">
   <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
@@ -57,13 +52,8 @@ site, this is the place to do it.
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon-114.png">
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{site.baseurl}}/assets/uswds/img/favicons/favicon-144.png">
-
-<!-- CSS
-================================================== -->
-<!-- env: demo -->
-
-
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
-
-
+  <!-- CSS
+    ================================================== -->
+  <!-- env: demo -->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
 </head>

@@ -5,6 +5,8 @@ This template is used when you want to fill the width of the page. By default, i
 {% include header.html %}
 {% include menu.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
 
-{{ content }}
+<main id="main-content">
+  {{ content }}
+</main>
 
 {% include footer.html %}

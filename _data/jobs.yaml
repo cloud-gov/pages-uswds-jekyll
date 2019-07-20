@@ -3,26 +3,26 @@
 # Reference this data file in 'datafile' in the Front Matter and _layouts/list.html renders it 
 # This is simple, hopefully provides you with a good enough example to make changes as needed
 - name: Site Lead
-  url: https://join.tts.gsa.gov/join/site-lead/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Cloud Adoption Specialist
-  url: https://join.tts.gsa.gov/join/cloud-adoption-specialist/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Contact Center Specialist
-  url: https://join.tts.gsa.gov/join/contact-center-optimization-specialist/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Customer Experience Specialist
-  url: https://join.tts.gsa.gov/join/customer-experience-specialist/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Data Analytics Specialist
-  url: https://join.tts.gsa.gov/join/data-and-analytics-specialist/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: IT Infrastructure Optimization Specialist
-  url: https://join.tts.gsa.gov/join/infrastructure-optimization-specialist/
+  url: https://join.tts.gsa.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
   
