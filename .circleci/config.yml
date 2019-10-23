@@ -24,7 +24,8 @@ jobs:
           paths:
             - vendor/bundle
       - run: npm run build
-      - run: npm run test
+      - run: bundle exec htmlproofer _site
+      - run: npx a11y '_site/**/*.html'
 
 
 workflows:
