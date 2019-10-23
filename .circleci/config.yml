@@ -23,6 +23,12 @@ jobs:
           key: v1-bundle-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
+      - run:
+        name: Install 'phantomjs'
+        command: |
+          sudo curl --output /tmp/phantomjs https://s3.amazonaws.com/circle-downloads/phantomjs-2.1.1
+          sudo chmod ugo+x /tmp/phantomjs
+          sudo ln -sf /tmp/phantomjs /usr/local/bin/phantomjs
       - run: npm run build
       - run: npm run test
 
