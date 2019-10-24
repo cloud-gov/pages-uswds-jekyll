@@ -48,7 +48,7 @@ title: Home
 
 {% if site.searchgov %}
   <h1>Seach Results</h1>
-  <div id="search-results"></div>
+  <ol id="search-results"></ol>
 
   {% if site.searchgov.affiliate == "federalist-uswds-example" %}
     <div class="usa-alert usa-alert--info">
@@ -59,6 +59,7 @@ title: Home
           <li>Go to the "Activate" section and get "API Access Key"</a></li>          
           <li>Open <code>_config.yml</code> and look for <code>searchgov</code> fields</li>
           <li>Add your <code>affiliate</code> and <code>access_key</code></li>
+          <li>Your results will not show up immidately. Make sure you follow <a href="https://search.gov/manual/searchgov-for-federalist.html">instructions to index your site</a>.</li> 
         </ol>
       </div>
     </div>
