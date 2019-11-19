@@ -6,7 +6,7 @@ where we provide an easy way to manage your navigation system
 <header class="usa-header usa-header--extended" role="banner">
   <div class="usa-navbar">
     <div class="usa-logo" id="extended-logo">
-      <em class="usa-logo__text"><a href="{{site.baseurl}}" title="Home" aria-label="Home">{{site.title}}</a></em>
+      <em class="usa-logo__text"><a href="{{site.baseurl}}/" title="Home" aria-label="Home">{{site.title}}</a></em>
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
@@ -32,6 +32,7 @@ where we provide an easy way to manage your navigation system
             </li>
             {% endfor %}
           </ul>
+
         </li>
         {% endunless %}
         {% endfor %}
@@ -44,7 +45,7 @@ where we provide an easy way to manage your navigation system
           </li>
           {% endfor %}
         </ul>
-        {% include searchgov/form.html affiliate=site.searchgov.affiliate %}
+        {% include searchgov/form.html searchgov=site.searchgov %}
       </div>
     </div>
   </nav>
