@@ -1,8 +1,8 @@
 ---
-title: Jobs
+title: Collections
 layout: data
-permalink: /jobs
-datafile: jobs
+permalink: /collections
+datafile: collections
 ---
 
 This is an example for list data file contents

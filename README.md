@@ -37,28 +37,38 @@ This repository contains the following examples and functionality:
 
 ```
 ---
-title: Example Page
+title: Collections Page
 layout: data
-permalink: /jobs
-datafile: jobs
+permalink: /collections
+datafile: collections
 ---
 ```
 
-The reference to `datafile` referers to the name of the file in `_data/jobs.yml` and loops through the values. Feel free to modify this as needed.
+The reference to `datafile` referers to the name of the file in `_data/collections.yml` and loops through the values. Feel free to modify this as needed.
 
 ✅  There are two different kinds of `pages`, one does not have a side bar navigation, and the other uses `_includes/sidenav.html`. You can enable this option by adding `sidenav: true` to your page front matter.
 
 ```
 ---
-title: Example Page with Sidebar
+title: Document with Sidenav
 layout: page
 sidenav: true
-permalink: /example-page-with-sidebar
+permalink: /document-with-sidenav
 ---
 ```
 
-
 ✅ Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
+
+
+```
+---
+searchgov:
+  endpoint: https://search.usa.gov  # You should not change this.
+  affiliate: federalist-uswds-example # replace this with your search.gov account 
+  access_key: your-access-key # This is placeholder. Not private.
+  inline: true #this renders the results on the same domain. Otherwise, it will render the results in the search.gov domain
+---
+```
 
 
 ## How to edit
@@ -69,6 +79,7 @@ permalink: /example-page-with-sidebar
 - You will most certainly need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
 - `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
+- `blog/search.html` is by search.gov. If you need to stylize results page, this is where you will do it.
 - `blog/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Non-developers should focus only on `_posts` and `_pages`
 
@@ -108,7 +119,6 @@ Note that when built by Federalist, `npm run federalist` is used instead of the
 - [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
 - [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
 - [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
-- [Jekyll Search](https://github.com/18F/jekyll_pages_api_search/)
 
 
 ## Contributing
