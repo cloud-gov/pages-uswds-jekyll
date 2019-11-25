@@ -1,16 +1,7 @@
----
----
-
-// Import the US Web Design System minified CSS
-@import "../uswds/css/uswds.min.css";
-// Alternatively, you could import the SCSS files directly for USWDS mixins and variables.
-//$theme-font-path:   '../uswds/fonts';
-//$theme-image-path:  '../uswds/img';
-//@import "uswds/uswds";
+// Import the US Web Design System minified CSS. This is required by asset pipeline.
 
 
-// This is the main CSS file. You can write your SCSS/SASS in _sass and import
-// them here. You probably want to load them _after_ uswds in order to override
+// This is the main CSS file. You can write your SCSS/SASS to override
 // any uswds styles.
 @media screen and (min-width: 640px) {
   .tablet\:width-1\/3 {

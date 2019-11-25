@@ -6,3 +6,4 @@ assets/js
 assets/uswds
 _sass/uswds
 .bundle
+.jekyll-cache/
