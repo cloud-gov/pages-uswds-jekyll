@@ -136,15 +136,6 @@ pagination:
   # Without file extension
   indexpage: 'index.html'
 
-
-assets:
-  sources:
-    - assets/css
-    - assets/fonts
-    - assets/images
-    - assets/js
-    - assets/videos
-
     
 exclude:
   - Gemfile
