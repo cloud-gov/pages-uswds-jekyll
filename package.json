@@ -9,6 +9,13 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "author": "Federalist",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/18F/federalist-uswds-jekyll"
+  },
+  "bugs": {
+    "url": "https://github.com/18F/federalist-uswds-jekyll/issues"
+  },
   "license": "CC0-1.0",
   "dependencies": {
     "uswds": "^2.0.2"
