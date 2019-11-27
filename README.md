@@ -72,16 +72,27 @@ searchgov:
 
 
 ## How to edit
-- We try to keep configuration options to a minimum so you can easily remove functionality, but you can review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They make reference to the agency name and contact information. The advanced options at the bottom should be changed only if you know what you know what you're doing.
-- Do not edit files in the `assets/` folder. This folder is reserved for serving assets once the sites is compiled. If you want add your own custom code, add and edit files in `src/`, ideally mirroring the `assets/` folder structure. This will keep the code repository small and not include unneccessary files. 
-- If you look at `package.json` you will see that the `npm run federalist` command will copy the contents from `src/` and move it over to `assets/` folder during the build process. If you want more advanced functionality, you should look into using [Webpack](https://webpack.js.org/concepts/configuration/).
-- Do not edit files in the `_site/` folder. These files are automatically generated and changes you make there will be destroyed.
-- You will most certainly need to edit files in `_includes/`, which include the primary menu, side navigation, logos etc
+- Non-developers should focus on editing markdown content in the `_posts` and `_pages` folder
+
+- We try to keep configuration options to a minimum so you can easily change functionality. You should review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They refer to the agency name and contact information. The rest of `_config.yml` has a range of more advanced options.
+
+- The contents inside `assets/` folder store your Javascript, SCSS/CSS, images, and other media assets are managed by  [jekyll-assets](https://github.com/envygeeks/jekyll-assets).  Assets are combined, compressed, and automatically available in your theme
+
+- If you look at `package.json` you will see that the `npm run federalist` command that will run when running on the Federalist platform.
+
+- Do not edit files in the `_site/` folder. These files are auto-generated, and any change you make in the folder will be overwritten.
+
+- To edit the look and feel of the site, you need to edit files in `_includes/` folder, which render key components, like the menu, side navigation, and logos.
+
 - `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
+
 - `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
-- `blog/search.html` is by search.gov. If you need to stylize results page, this is where you will do it.
-- `blog/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`. You should also familiarize yourself with [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
-- Non-developers should focus only on `_posts` and `_pages`
+
+- `blog/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`.  For example, you may need go change configurations for [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
+
+- `search/index.html` is used by search.gov.
+
+
 
 
 ## Installation
