@@ -1,11 +1,11 @@
-// Import the US Web Design System minified CSS. This is required by asset pipeline.
+// Import the US Web Design System SASS.
 
+@import "uswds";
 
-// This is the main CSS file. You can write your SCSS/SASS to override
-// any uswds styles.
+// Add your SASS/CSS here
 
 // default mode hide banner
-.usa-banner__content{
+.usa-banner__content {
   display: hidden;
 }
 
