@@ -141,6 +141,7 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE.md
   - degit.json
+  - vendor
 
 assets:
   sources:
