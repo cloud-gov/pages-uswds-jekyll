@@ -146,6 +146,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+  sprockets (~> 3.7)
   tzinfo-data
 
 RUBY VERSION
