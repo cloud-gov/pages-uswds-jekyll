@@ -19,7 +19,7 @@
   },
   "license": "CC0-1.0",
   "dependencies": {
-    "uswds": "~2.2.0"
+    "uswds": "~2.1.0"
   },
   "devDependencies": {
     "a11y": "^0.5.1",

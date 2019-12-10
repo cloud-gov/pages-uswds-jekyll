@@ -5,8 +5,7 @@
       "Gemfile.lock",
       "package-lock.json",
       "LICENSE.md",
-      "CONTRIBUTING.md",
-      "degit.json"
+      "CONTRIBUTING.md"
     ]
   }
 ]
