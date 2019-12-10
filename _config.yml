@@ -142,6 +142,9 @@ exclude:
   - LICENSE.md
   - degit.json
   - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
 
 assets:
   sources:
