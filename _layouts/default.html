@@ -1,15 +1,26 @@
-{% comment %} 
-This is used for just about every page, except the home page
+{% comment %}
+This is used for just about every page. It provides the border around the content.
+The home page uses wide.html layout, since it extends full width of page
 {% endcomment %}
 
+<!DOCTYPE html>
 
-{% include header.html %}
-{% include menu.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
+<html lang="en">
 
-<main class="usa-layout-docs usa-section" id="main-content">
-  <div class="grid-container">
+{% include meta.html %}
+
+<body>
+  {% include header.html %}
+
+  {% include menu.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
+
+  <main id="main-content">
     {{ content }}
-  </div>
-</main>
+  </main>
 
-{% include footer.html %}
+  {% include footer.html %}
+
+  {% include scripts.html %}
+</body>
+
+</html>
