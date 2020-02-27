@@ -164,24 +164,20 @@ pagination:
   indexpage: "index.html"
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle
-  - vendor/cache
-  - vendor/gems
-  - vendor/ruby
-  - node_modules
   - package.json
   - package-lock.json
   - README.md
-  - src
   - CONTRIBUTING.md
   - LICENSE.md
-  - assets
+  - degit.json
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
 
 assets:
   sources:
     - node_modules/uswds/dist/img
     - node_modules/uswds/dist/js
     - node_modules/uswds/dist/scss
+    - node_modules/netlify-cms/dist

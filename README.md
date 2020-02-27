@@ -92,38 +92,41 @@ searchgov:
 
 - `search/index.html` is used by search.gov.
 
+## Getting Started
 
+### Installation as a starter
 
+#### With `npx`
+The simplest way to create your own repository based on this starter is to use `npx` (included with `node`) with `degit`.
 
-## Installation
+    $ npx degit https://github.com/18F/federalist-uswds-jekyll <destination-folder>
+    $ cd <destination-folder>
+    $ git init
 
-Clone the repository.
+#### With `git`
+    $ git clone --depth 1 https://github.com/18F/federalist-uswds-jekyll <destination-folder>
+    $ cd <destination-folder>
+    $ npm run reset
+    $ git init
+
+### Installation for development
 
     $ git clone https://github.com/18F/federalist-uswds-jekyll
     $ cd federalist-uswds-jekyll
 
-Install the Node.js dependencies.
+Note that when built by Federalist, `npm run federalist` is used instead of the
+`build` script.
 
+### Install dependencies and run app
     $ npm install
-
-Build the site.
-
-    $ npm run build
-
-Run the site locally.
-
+    $ bundle install
     $ npm start
 
 Open your web browser to [localhost:4000](http://localhost:4000/) to view your
 site.
 
-After you make changes, be sure to run the tests.
-
+### Testing
     $ npm test
-
-Note that when built by Federalist, `npm run federalist` is used instead of the
-`build` script.
-
 
 ## Technologies you should be familiarize yourself with
 
