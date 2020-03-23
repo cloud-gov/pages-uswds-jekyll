@@ -1,0 +1,140 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+
+// Focus State
+
+[href]:focus {
+  @include u-outline-color('base');
+  @include u-outline('2px');
+  outline-style: dotted;
+}
+
+//// Buttons
+
+.usa-button--secondary {
+  @include u-text('primary-darker');
+  @include u-bg('secondary-vivid')
+}
+
+.usa-button--secondary:hover{
+  @include u-text('primary-darker');
+  @include u-bg('secondary')
+}
+
+//// Header
+
+// logo
+
+.usa-logo__text {
+  display: table-cell;
+}
+
+.usa-logo__text::before {
+  background-image: asset_url('18f-logo.svg');
+  background-size: cover;
+  @include u-margin-right(1);
+  height: 44px;
+  width: 44px;
+  display: inline-block;
+  content: '';
+}
+
+
+.site-title {
+  vertical-align: top;
+  @include u-margin-top(2);
+}
+
+@include at-media(desktop) {
+  .site-title {
+    @include u-margin-top(0);
+  }
+}
+
+//// Headings
+.usa-prose{
+  h1,h2,h3,h4,h5,h6 {
+    @include u-text('primary-darker');
+  }
+}
+
+//// Site Navbar
+.usa-header--extended .usa-current::after,
+.usa-header--extended .usa-current:hover::after {
+  @include u-bg('secondary-vivid');
+  height: 0.25rem;
+  @include u-text('ink');
+}
+
+// hovers
+
+.usa-nav__primary > .usa-nav__primary-item > a:hover,
+.usa-nav__primary .usa-nav__primary-item > a.usa-current {
+  @include u-text('ink');
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a:hover {
+  @include u-bg('base-lightest');
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a:hover::after {
+  height: 0;
+}
+
+.usa-nav__primary > .usa-nav__primary-item > a.usa-current:hover::after{
+  height: 0.25rem;
+}
+
+//// Side Navigation
+.usa-sidenav a {
+  @include u-text('ink');
+}
+
+.usa-sidenav > .usa-sidenav__item {
+  padding-left: 0;
+}
+
+.usa-sidenav .usa-current {
+  @include u-text('ink');
+}
+
+.usa-sidenav .usa-current::after {
+  @include u-bg('secondary-vivid');
+  border-radius: 0;
+  width: 0.5rem;
+  top: 0;
+  bottom: 0;
+}
+
+.usa-sidenav a:hover {
+  color: inherit;
+}
+
+// footer
+.logo-links {
+  display: table-cell;
+}
+
+.footer-logo {
+  @include u-margin-right(2);
+  text-decoration: none;
+}
