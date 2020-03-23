@@ -42,15 +42,15 @@ i.e.
 
 //// Links
 
-a {
+.usa-prose a {
   @include u-text('primary');
 }
 
-a:hover {
+.usa-prose a:hover {
   @include u-text('primary-dark');
 }
 
-a:visited {
+.usa-prose a:visited {
   @include u-text('violet-70v');
 }
 
