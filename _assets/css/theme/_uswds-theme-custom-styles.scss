@@ -40,6 +40,20 @@ i.e.
   @include u-bg('secondary')
 }
 
+//// Links
+
+a {
+  @include u-text('primary');
+}
+
+a:hover {
+  @include u-text('primary-dark');
+}
+
+a:visited {
+  @include u-text('violet-70v');
+}
+
 //// Header
 
 // logo
@@ -58,7 +72,6 @@ i.e.
   content: '';
 }
 
-
 .site-title {
   vertical-align: top;
   @include u-margin-top(2);
@@ -75,6 +88,12 @@ i.e.
   h1,h2,h3,h4,h5,h6 {
     @include u-text('primary-darker');
   }
+}
+
+/// prose
+
+.usa-prose a {
+  @include u-text($theme-link-color);
 }
 
 //// Site Navbar
