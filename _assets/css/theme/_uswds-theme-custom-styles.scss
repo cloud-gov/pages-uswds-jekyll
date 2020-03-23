@@ -40,6 +40,20 @@ i.e.
   @include u-bg('secondary')
 }
 
+//// Links
+
+a {
+  @include u-text('primary');
+}
+
+a:hover {
+  @include u-text('primary-dark');
+}
+
+a:visited {
+  @include u-text('violet-70v');
+}
+
 //// Header
 
 // logo
