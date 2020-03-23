@@ -6,6 +6,11 @@
   https://circleci.com/
 -->
 [![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
+# 18F theme for Federalist + U.S. Web Design System + Jekyll
+
+This is an in progress repo to create and 18F theme of the [federalist-uswds-jekyll](https://github.com/18F/federalist-uswds-jekyll) templates to make it easier for team members to create and update 18F guides. 
+
+--------
 
 # Federalist + U.S. Web Design System + Jekyll
 
