@@ -32,12 +32,12 @@ i.e.
 
 .usa-button--secondary {
   @include u-text('primary-darker');
-  @include u-bg('secondary-vivid')
+  @include u-bg('secondary')
 }
 
 .usa-button--secondary:hover{
   @include u-text('primary-darker');
-  @include u-bg('secondary')
+  @include u-bg('secondary-dark')
 }
 
 //// Links
@@ -99,7 +99,7 @@ i.e.
 //// Site Navbar
 .usa-header--extended .usa-current::after,
 .usa-header--extended .usa-current:hover::after {
-  @include u-bg('secondary-vivid');
+  @include u-bg('secondary');
   height: 0.25rem;
   @include u-text('ink');
 }
@@ -137,7 +137,7 @@ i.e.
 }
 
 .usa-sidenav .usa-current::after {
-  @include u-bg('secondary-vivid');
+  @include u-bg('secondary');
   border-radius: 0;
   width: 0.5rem;
   top: 0;

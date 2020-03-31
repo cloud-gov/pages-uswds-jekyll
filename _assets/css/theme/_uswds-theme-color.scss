@@ -25,55 +25,55 @@ Theme palette colors
 
 // Base colors
 $theme-color-base-family: "gray-cool";
-$theme-color-base-lightest: "gray-cool-3";
-$theme-color-base-lighter: "gray-cool-5";
+$theme-color-base-lightest: "gray-cool-5";
+$theme-color-base-lighter: "gray-cool-10";
 $theme-color-base-light: "gray-cool-30";
 $theme-color-base: "gray-cool-50";
 $theme-color-base-dark: "gray-cool-60";
 $theme-color-base-darker: "gray-cool-70";
-$theme-color-base-darkest: "gray-cool-90";
+$theme-color-base-darkest: false;
 $theme-color-base-ink: "gray-cool-90";
 
 // Primary colors
 $theme-color-primary-family: "blue";
 $theme-color-primary-lightest: false;
-$theme-color-primary-lighter: "blue-10";
-$theme-color-primary-light: "blue-30";
+$theme-color-primary-lighter: false;
+$theme-color-primary-light: false;
 $theme-color-primary: "blue-cool-60v";
-$theme-color-primary-vivid: "blue-cool-60v";
+$theme-color-primary-vivid: false;
 $theme-color-primary-dark: "blue-warm-70v";
 $theme-color-primary-darker: "blue-warm-80v";
 $theme-color-primary-darkest: false;
 
 // Secondary colors
-$theme-color-secondary-family: "cyan";
-$theme-color-secondary-lightest: "cyan-5";
-$theme-color-secondary-lighter: "cyan-10v";
-$theme-color-secondary-light: "cyan-20v";
-$theme-color-secondary: "cyan-30";
-$theme-color-secondary-vivid: "cyan-30v";
-$theme-color-secondary-dark: "red-60v";
-$theme-color-secondary-darker: "red-70v";
+$theme-color-secondary-family: false;
+$theme-color-secondary-lightest: false;
+$theme-color-secondary-lighter: false;
+$theme-color-secondary-light: false;
+$theme-color-secondary: "cyan-30v";
+$theme-color-secondary-vivid: false;
+$theme-color-secondary-dark: "cyan-40v";
+$theme-color-secondary-darker: "cyan-50";
 $theme-color-secondary-darkest: false;
 
 // Accent warm colors
-$theme-color-accent-warm-family: "orange";
+$theme-color-accent-warm-family: false;
 $theme-color-accent-warm-lightest: false;
-$theme-color-accent-warm-lighter: "orange-10";
-$theme-color-accent-warm-light: "orange-20v";
-$theme-color-accent-warm: "orange-30v";
-$theme-color-accent-warm-dark: "orange-50v";
-$theme-color-accent-warm-darker: "orange-60";
+$theme-color-accent-warm-lighter: false;
+$theme-color-accent-warm-light: false;
+$theme-color-accent-warm: false;
+$theme-color-accent-warm-dark: false;
+$theme-color-accent-warm-darker: false;
 $theme-color-accent-warm-darkest: false;
 
 // Accent cool colors
-$theme-color-accent-cool-family: "blue-cool";
+$theme-color-accent-cool-family: false;
 $theme-color-accent-cool-lightest: false;
 $theme-color-accent-cool-lighter: false;
 $theme-color-accent-cool-light: false;
-$theme-color-accent-cool: "cyan-30v";
-$theme-color-accent-cool-dark: "blue-cool-40v";
-$theme-color-accent-cool-darker: "blue-cool-60v";
+$theme-color-accent-cool: "blue-cool-60v";
+$theme-color-accent-cool-dark: "blue-cool-70v";
+$theme-color-accent-cool-darker: "blue-cool-80";
 $theme-color-accent-cool-darkest: false;
 
 /*
