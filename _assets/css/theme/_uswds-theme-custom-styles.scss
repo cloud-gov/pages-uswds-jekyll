@@ -20,43 +20,9 @@ i.e.
 ----------------------------------------
 */
 
-// Focus State
+//// HEADER
 
-[href]:focus {
-  @include u-outline-color('base');
-  @include u-outline('2px');
-  outline-style: dotted;
-}
-
-//// Buttons
-
-.usa-button--secondary {
-  @include u-text('primary-darker');
-  @include u-bg('secondary')
-}
-
-.usa-button--secondary:hover{
-  @include u-text('primary-darker');
-  @include u-bg('secondary-dark')
-}
-
-//// Links
-
-.usa-prose a {
-  @include u-text('primary');
-}
-
-.usa-prose a:hover {
-  @include u-text('primary-dark');
-}
-
-.usa-prose a:visited {
-  @include u-text('violet-70v');
-}
-
-//// Header
-
-// logo
+// Logo
 
 .usa-logo__text {
   display: table-cell;
@@ -83,20 +49,7 @@ i.e.
   }
 }
 
-//// Headings
-.usa-prose{
-  h1,h2,h3,h4,h5,h6 {
-    @include u-text('primary-darker');
-  }
-}
-
-/// prose
-
-.usa-prose a {
-  @include u-text($theme-link-color);
-}
-
-//// Site Navbar
+// top navbar
 .usa-header--extended .usa-current::after,
 .usa-header--extended .usa-current:hover::after {
   @include u-bg('secondary');
@@ -104,7 +57,46 @@ i.e.
   @include u-text('ink');
 }
 
-// hovers
+//// FOOTER
+.logo-links {
+  display: table-cell;
+}
+
+.footer-logo {
+  @include u-margin-right(2);
+  text-decoration: none;
+}
+
+//// TYPOGRAPHY
+
+// Headings
+.usa-prose{
+  h1,h2,h3,h4,h5,h6 {
+    @include u-text('primary-darker');
+  }
+}
+
+// prose
+
+.usa-prose a {
+  @include u-text($theme-link-color);
+}
+
+// Links
+
+.usa-prose a {
+  @include u-text('primary');
+}
+
+.usa-prose a:hover {
+  @include u-text('primary-dark');
+}
+
+.usa-prose a:visited {
+  @include u-text('violet-70v');
+}
+
+// Link hover
 
 .usa-nav__primary > .usa-nav__primary-item > a:hover,
 .usa-nav__primary .usa-nav__primary-item > a.usa-current {
@@ -123,7 +115,50 @@ i.e.
   height: 0.25rem;
 }
 
-//// Side Navigation
+// Link focus
+
+[href]:focus {
+  @include u-outline-color('base');
+  @include u-outline('2px');
+  outline-style: dotted;
+}
+
+//// PAGE COMPONENTS
+
+// Buttons
+// .usa-button:hover {
+//   @include u-bg('primary')
+// }
+//
+// .usa-button:hover {
+//   @include u-bg('primary-dark')
+// }
+
+.usa-button--secondary {
+  @include u-text('primary-darker');
+  @include u-bg('secondary')
+}
+
+.usa-button--secondary:hover{
+  @include u-text('primary-darker');
+  @include u-bg('secondary-light')
+}
+
+// Hero
+.usa-hero__heading {
+  color: white;
+}
+
+.usa-hero--no-image {
+  background-image: none;
+  @include u-bg('primary-darker');
+}
+
+.usa-hero--no-image .usa-hero__callout {
+  padding-left: 0;
+}
+
+// Side Navigation
 .usa-sidenav a {
   @include u-text('ink');
 }
@@ -148,12 +183,7 @@ i.e.
   color: inherit;
 }
 
-// footer
-.logo-links {
-  display: table-cell;
-}
-
-.footer-logo {
-  @include u-margin-right(2);
-  text-decoration: none;
+// Dark sections
+.usa-section--dark h3 {
+  @include u-text('secondary');
 }
