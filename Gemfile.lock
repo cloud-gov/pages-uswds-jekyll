@@ -59,8 +59,8 @@ GEM
       sprockets (>= 3.3, < 4.1.beta)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-paginate-v2 (2.0.0)
-      jekyll (~> 3.0)
+    jekyll-paginate-v2 (3.0.0)
+      jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-sanity (1.2.0)
@@ -122,7 +122,7 @@ DEPENDENCIES
   jekyll (~> 3.8)
   jekyll-assets (~> 3.0)
   jekyll-feed (~> 0.6)
-  jekyll-paginate-v2 (= 2.0)
+  jekyll-paginate-v2 (= 3.0.0)
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
