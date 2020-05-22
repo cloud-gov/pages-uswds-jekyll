@@ -146,8 +146,7 @@ To build but not serve the site, run `npm run build` or `bundle exec jekyll buil
 
 #### With Docker
     $ docker-compose run node npm install
-    $ docker-compose build
-    $ docker-compose up
+    $ docker-compose up --build
 
 To build but not serve the site, run:
 ```

@@ -9,13 +9,11 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US
 ENV LC_ALL en_US.UTF-8
 
-RUN mkdir -p /app
-
 WORKDIR /app
 
-COPY Gemfile /app
-COPY Gemfile.lock /app
-
+COPY Gemfile* ./
 RUN bundle install
 
 EXPOSE 4000
+
+CMD bundle exec jekyll serve --host 0.0.0.0
