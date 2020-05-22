@@ -1,3 +1,12 @@
+FROM node:12 AS node
+
+WORKDIR /app
+
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
+
+
 FROM ruby:2.6.6
 
 RUN apt-get update && \
@@ -13,6 +22,8 @@ WORKDIR /app
 
 COPY Gemfile* ./
 RUN bundle install
+
+COPY --from=node /app/node_modules node_modules
 
 EXPOSE 4000
 

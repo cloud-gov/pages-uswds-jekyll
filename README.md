@@ -145,7 +145,6 @@ This will create a copy of this repo in a Github repository of your choice but y
 To build but not serve the site, run `npm run build` or `bundle exec jekyll build`.
 
 #### With Docker
-    $ docker-compose run node npm install
     $ docker-compose up --build
 
 To build but not serve the site, run:
