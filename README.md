@@ -96,39 +96,80 @@ searchgov:
 
 ## Getting Started
 
-### Installation as a starter
+### Easy mode
 
-#### With `npx`
-The simplest way to create your own repository based on this starter is to use `npx` (included with `node`) with `degit`.
+#### From Federalist
+This will create a copy of this repo in a Github repository of your choice and add it to your Federalist dashboard.
 
+- From [Federalist](https://federalistapp-staging.18f.gov/sites) click the "+ Add Site" button.
+- Click the "Use this template" button for the appropriate template
+- Follow the instructions
+
+#### From Github
+This will create a copy of this repo in a Github repository of your choice but you will need to add it your [Federalist dashbord](https://federalistapp-staging.18f.gov/sites/new).
+
+- Click the "Use this template" button above or [here](https://github.com/18F/federalist-uswds-jekyll/generate).
+- Follow the instructions
+- Return to [Federalist](https://federalistapp-staging.18f.gov/sites/new) and add the repository.
+
+### Hard mode
+
+#### With `npx` (requires node)
     $ npx degit https://github.com/18F/federalist-uswds-jekyll <destination-folder>
     $ cd <destination-folder>
-    $ git init
 
-#### With `git`
-    $ git clone --depth 1 https://github.com/18F/federalist-uswds-jekyll <destination-folder>
-    $ cd <destination-folder>
-    $ npm run reset
+#### Push to your Github repository
+- [Create a new Github repository](https://help.github.com/en/github/getting-started-with-github/create-a-repo).
+- Follow the instructions form Github or
+```
     $ git init
+    $ git add . && git commit -m 'Initial commit'
+    $ git remote add origin git@github.com:<your-org>/<your-repo>.git
+    (Make sure to replace `<your-org>` and `<your-repo>` above with the correct values)
+    $ git push -u origin master
+```
 
 ### Installation for development
-
     $ git clone https://github.com/18F/federalist-uswds-jekyll
     $ cd federalist-uswds-jekyll
 
-Note that when built by Federalist, `npm run federalist` is used instead of the
-`build` script.
+### Running the application
 
-### Install dependencies and run app
+#### With locally installed `node` and `ruby`
     $ npm install
     $ bundle install
-    $ npm start
+    $ npm start 
+    OR
+    $ bundle exec jekyll serve
+
+To build but not serve the site, run `npm run build` or `bundle exec jekyll build`.
+
+#### With Docker
+    $ docker-compose run node npm install
+    $ docker-compose build
+    $ docker-compose up
+
+To build but not serve the site, run:
+```
+docker-compose run ruby bundle exec jekyll build
+```
+.
+
+Note that when built by Federalist, `npm run federalist` is used instead of
+`npm run build`.
 
 Open your web browser to [localhost:4000](http://localhost:4000/) to view your
 site.
 
 ### Testing
+
+#### With locally installed `node` and `ruby`
     $ npm test
+    OR
+    $ bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
+
+#### With Docker
+    $ docker-compose run ruby bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
 
 ## Technologies you should be familiarize yourself with
 
