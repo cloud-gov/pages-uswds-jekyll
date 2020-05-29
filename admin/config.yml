@@ -5,7 +5,6 @@ backend:
   auth_endpoint: external/auth/github
   preview_context: federalist/build
   branch: master
-  use_graphql: true
 
 media_folder: assets/uploads
 public_folder: /images/uploads
