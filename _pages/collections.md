@@ -1,7 +1,7 @@
 ---
 title: Collections
 layout: data
-permalink: /collections
+permalink: /collections/
 datafile: collections
 ---
 
