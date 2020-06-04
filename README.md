@@ -94,7 +94,7 @@ dap:
   # subagency: your-subagency
 ```
 
-✅ [Google Analytics](https://analytics.google.com/analytics/web/) integration - If you have a Google Analytics account to use in addition to DAP, add your "ua" to `_config.yml` and uncomment the appropriate lines. Ex.
+✅ [Google Analytics](https://analytics.google.com/analytics/web/) integration - If you have a Google Analytics account to use, add your "ua" to `_config.yml` and uncomment the appropriate lines. Ex.
 
 ```
 ga:
