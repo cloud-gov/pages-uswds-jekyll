@@ -59,19 +59,47 @@ permalink: /document-with-sidenav
 ---
 ```
 
-✅ Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
-
+✅ [Search.gov](https://search.gov) integration - Once you have registered and configured Search.gov for your site by following [these instructions](https://federalist.18f.gov/documentation/search/), add your "affiliate" and "access key" to `_config.yml`. Ex.
 
 ```
----
 searchgov:
-  endpoint: https://search.usa.gov  # You should not change this.
-  affiliate: federalist-uswds-example # replace this with your search.gov account 
-  access_key: your-access-key # This is placeholder. Not private.
-  inline: true #this renders the results on the same domain. Otherwise, it will render the results in the search.gov domain
----
+
+  # You should not change this.
+  endpoint: https://search.usa.gov
+
+  # replace this with your search.gov account
+  affiliate: federalist-uswds-example
+
+  # replace with your access key
+  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
+
+  # this renders the results within the page instead of sending to user to search.gov
+  inline: true
 ```
 
+The logic for using Search.gov can be found in `_includes/searchgov/form.html` and supports displaying the results inline or sending the user to Search.gov the view the results. This setting defaults to "inline" but can be changed by setting
+```
+searchgov:
+  inline: false
+```
+in `_config.yml`.
+
+✅ [Digital Analytics Program (DAP)](https://digital.gov/services/dap/) integration - Once you have registered your site with DAP add your "agency" and optionally, `subagency` to `_config.yml` and uncomment the appropriate lines. Ex.
+
+```
+dap:
+  # agency: your-agency
+
+  # Optional
+  # subagency: your-subagency
+```
+
+✅ [Google Analytics](https://analytics.google.com/analytics/web/) integration - If you have a Google Analytics account to use in addition to DAP, add your "ua" to `_config.yml` and uncomment the appropriate lines. Ex.
+
+```
+ga:
+  # ua: your-ua
+```
 
 ## How to edit
 - Non-developers should focus on editing markdown content in the `_posts` and `_pages` folder
