@@ -8,7 +8,7 @@ gem "jekyll", "~> 3.8"
 gem "sprockets", "~> 3.7"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.14"
   gem 'jekyll-redirect-from'
   gem 'jekyll-paginate-v2', "3.0.0"  
   gem 'jekyll-sitemap'
