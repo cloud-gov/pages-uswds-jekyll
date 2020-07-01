@@ -154,7 +154,7 @@ This will create a copy of this repo in a Github repository of your choice but y
     $ git add . && git commit -m 'Initial commit'
     $ git remote add origin git@github.com:<your-org>/<your-repo>.git
     (Make sure to replace `<your-org>` and `<your-repo>` above with the correct values)
-    $ git push -u origin master
+    $ git push -u origin main
 ```
 
 ### Installation for development
