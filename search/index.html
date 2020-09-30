@@ -15,8 +15,8 @@ title: Search
   
   Object.keys(params).forEach(key => searchEndpoint.searchParams.append(key, params[key]))
 
-  fetch(searchEndpoint).then(function(response) {
-      return response.json()
+  fetch(searchEndpoint).then(function(res) {
+      return res.json()
     }).then(function(posts) {
       for (item in posts.web.results){
         render_result(`
