@@ -146,7 +146,7 @@ This will create a copy of this repo in a Github repository of your choice and a
 - Follow the instructions
 
 #### From Github
-This will create a copy of this repo in a Github repository of your choice but you will need to add it your [Federalist dashbord](https://federalistapp.18f.gov/sites/new).
+This will create a copy of this repo in a Github repository of your choice but you will need to add it your [Federalist dashboard](https://federalistapp.18f.gov/sites/new).
 
 - Click the "Use this template" button above or [here](https://github.com/18F/federalist-uswds-jekyll/generate).
 - Follow the instructions
