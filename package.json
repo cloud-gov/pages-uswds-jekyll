@@ -9,7 +9,7 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
-    "netlify-cms": "^2.10.78",
+    "netlify-cms": "^2.10.84",
     "uswds": "~2.10.0"
   },
   "devDependencies": {
