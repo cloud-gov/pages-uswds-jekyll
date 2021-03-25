@@ -1,8 +1,23 @@
-// Import the US Web Design System SASS.
+/*
+  Customize US Web Design System SASS
+  See all at designsystem.digital.gov/documentation/settings
+*/
+
+// Example - Override the background image in the hero component using SASS:
+// $theme-hero-image: asset_path("whatever-the-default-is.png");
 
 @import "uswds";
 
-// Add your SASS/CSS here
+// Example - Override the background image in the hero component using CSS:
+//.usa-hero {
+//  background-image: asset_url("your-image.png")
+//  background-position: 50%;
+//  background-size: cover;
+//}
+
+/*
+  Add your SASS/CSS here
+*/
 
 // default mode hide banner
 .usa-banner__content {
