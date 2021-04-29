@@ -1,0 +1,48 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: html-proofer
+    versions:
+    - 3.18.5
+    - 3.18.6
+    - 3.18.8
+    - 3.19.0
+  - dependency-name: nokogiri
+    versions:
+    - 1.11.1
+    - 1.11.2
+  - dependency-name: jekyll
+    versions:
+    - 4.0.0.pre.beta1
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: netlify-cms
+    versions:
+    - 2.10.102
+    - 2.10.108
+    - 2.10.111
+    - 2.10.84
+    - 2.10.90
+    - 2.10.91
+    - 2.10.93
+    - 2.10.96
+    - 2.10.99
+  - dependency-name: immer
+    versions:
+    - 8.0.1
+    - 8.0.4
+  - dependency-name: uswds
+    versions:
+    - 2.10.1
+    - 2.10.2
