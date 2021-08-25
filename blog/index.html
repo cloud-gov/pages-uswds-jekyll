@@ -21,13 +21,13 @@ pagination:
       <div
         class="padding-bottom-5 margin-top-4 usa-prose border-bottom-05 border-base-lightest"
       >
-        <h3 class="title">
+        <h2 class="title">
           <a
             class="usa-link text-no-underline"
             href="{{ site.baseurl }}{{ post.url }}"
             >{{post.title}}</a
           >
-        </h3>
+        </h2>
         <div class="text-base margin-bottom-2">
           <div class="margin-top-neg-105">
             By <span class="text-bold">{{ post.author }}</span> · {{ post.date |
@@ -81,11 +81,11 @@ pagination:
         </div>
       </div>
     </div>
-    <aside class="desktop:grid-col-fill margin-top-4 padding-right-4">
+    <article aria-label="Other site posts and related links" class="desktop:grid-col-fill margin-top-4 padding-right-4">
       <div
         class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose"
       >
-        <h4 class="">Most Recent Posts</h4>
+        <h3 class="">Most Recent Posts</h3>
         <ul class="usa-list usa-list--unstyled padding-top-2">
           {% for post in site.posts limit:3 %}
           <li class="padding-bottom-1">
@@ -99,7 +99,7 @@ pagination:
       <div
         class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose"
       >
-        <h4>Another list of links</h4>
+        <h3>Another list of links</h3>
         <ul class=" usa-list usa-list--unstyled padding-top-2">
           <li class="padding-bottom-1">
             <a class="usa-link" href="{{site.baseurl}}{{blog.url}}"
@@ -131,7 +131,7 @@ pagination:
       <div
         class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose"
       >
-        <h4>Social links</h4>
+        <h3>Social links</h3>
         <ul class="usa-list usa-list--unstyled padding-top-2">
           <li class="padding-bottom-1">
             <svg
@@ -198,7 +198,7 @@ pagination:
           </li>
         </ul>
       </div>
-    </aside>
+    </article>
   </div>
   <div class="grid-row padding-top-4 tablet:padding-x-4 margin-bottom-4">
     <a class="usa-link" href="#blog">Return to top</a>
