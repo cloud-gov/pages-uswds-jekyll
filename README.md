@@ -155,7 +155,7 @@ This will create a copy of this repo in a Github repository of your choice but y
 ### Hard mode
 
 #### With `npx` (requires node)
-    $ npx degit https://github.com/18F/federalist-uswds-jekyll <destination-folder>
+    $ npx degit https://github.com/18F/federalist-uswds-jekyll#main <destination-folder>
     $ cd <destination-folder>
 
 #### Push to your Github repository
