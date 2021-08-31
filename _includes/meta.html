@@ -16,15 +16,15 @@ site, this is the place to do it.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title and meta description
     ================================================== -->
-  <title>{{site.title}}</title>
-  <meta property="og:title" content="{{site.title}}">
-  <meta name="description" content="{{site.description}}">
-  <meta property="og:description" content="{{site.description}}">
+  <title>{{ page.title | site.title }}</title>
+  <meta property="og:title" content="{{ page.title | site.title }}">
+  <meta name="description" content="{{ page.description | site.description }}">
+  <meta property="og:description" content="{{ page.description | site.description }}">
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{site.twitter}}" />
-  <meta name="twitter:title" content="{{site.title}}" />
-  <meta name="twitter:description" content="{{site.description}}" />
+  <meta name="twitter:title" content="{{ page.title | site.title }}" />
+  <meta name="twitter:description" content="{{ page.description | site.description }}" />
 
   <meta property="og:type" content="article">
   <link rel="canonical" href="{{ page.url | absolute_url }}" />

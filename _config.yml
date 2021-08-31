@@ -107,7 +107,7 @@ secondary_navigation:
 # 3. Add your site/affiliate name here.
 searchgov:
 
-  # You should not change this.
+  # only change this if you're using a CNAME, learn more here: https://search.gov/manual/cname.html
   endpoint: https://search.usa.gov
 
   # replace this with your search.gov account
