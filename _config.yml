@@ -119,6 +119,9 @@ searchgov:
   # this renders the results within the page instead of sending to user to search.gov
   inline: true
 
+  # this allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
+  suggestions: true
+
 ##########################################################################################
 # The values below here are more advanced and should only be
 # changed if you know what they do

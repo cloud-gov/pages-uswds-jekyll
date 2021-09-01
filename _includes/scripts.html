@@ -25,3 +25,20 @@
 
 {% asset uswds.min.js %}
 {% asset app.js %}
+
+{% if site.searchgov %}
+  {% if site.searchgov.suggestions == "true" %}
+  <script>
+  //<![CDATA[
+      var usasearch_config = { siteHandle:"{{ site.searchgov.affiliate }}" };
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//search.usa.gov/javascripts/remote.loader.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+
+  //]]>
+  </script>
+  {% endif %}  
+{% else %}
+{% endif %}
