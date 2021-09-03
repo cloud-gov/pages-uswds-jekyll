@@ -107,19 +107,20 @@ secondary_navigation:
 # 3. Add your site/affiliate name here.
 searchgov:
 
-  # only change this if you're using a CNAME, learn more here: https://search.gov/manual/cname.html
+  # Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
   endpoint: https://search.usa.gov
 
-  # replace this with your search.gov account
+  # Replace this with your search.gov account.
   affiliate: federalist-uswds-example
 
-  # replace with your access key
+  # Replace this with your access key.
   access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
 
-  # this renders the results within the page instead of sending to user to search.gov
+  # This renders the results within the page instead of sending to user to search.gov.
   inline: true
 
-  # this allows Search.gov to present relevant type-ahead search suggestions in your website's search box.
+  # This allows Search.gov to present relevant type-ahead search suggestions in your website's search box. 
+  # If you do not want to present search suggestions, set this value to false.
   suggestions: true
 
 ##########################################################################################
