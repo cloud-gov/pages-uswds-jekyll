@@ -193,7 +193,9 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
-
+  - docker-compose.yml
+  - Dockerfile
+  
 assets:
   sources:
     - node_modules/uswds/dist/img
