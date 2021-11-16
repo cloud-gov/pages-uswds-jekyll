@@ -1,9 +1,10 @@
 ---
 title: A very long blog header that has a lot of detail but is still relevant
+description: This post has a long header
 layout: post
 date: January 14, 2019
 author: Abraham Lincoln
-excerpt: This is an excerpt
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus.
 image: hire-us.jpg
 image_alt_text: Hire Us
 ---
