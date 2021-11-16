@@ -1,5 +1,6 @@
 ---
 title: Second page
+description: The second page as it says
 layout: post
 date: January 15, 2019
 author: George Washington
