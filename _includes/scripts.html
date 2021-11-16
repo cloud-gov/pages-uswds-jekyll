@@ -25,3 +25,12 @@
 
 {% asset uswds.min.js %}
 {% asset app.js %}
+
+{% if site.searchgov %}
+  {% if site.searchgov.suggestions == true %}
+    <script>
+          var usasearch_config = { siteHandle: "{{ site.searchgov.affiliate }}" };
+    </script>
+    <script async src="https://search.usa.gov/javascripts/remote.loader.js" type="text/javascript"></script>
+  {% endif %}
+{% endif %}
