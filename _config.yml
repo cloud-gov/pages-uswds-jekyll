@@ -197,13 +197,7 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  raw_precompile:
-    - source: node_modules/uswds/dist/fonts/**/*
-      strip: node_modules/uswds/dist/
-    - source: node_modules/uswds/dist/img/sprite.svg
-      strip: node_modules/uswds/dist/
-    - source: node_modules/uswds/dist/js/*.map
-      strip: node_modules/uswds/dist/
+  compression: true
   sources:
     - node_modules/uswds/dist
     - node_modules/netlify-cms/dist

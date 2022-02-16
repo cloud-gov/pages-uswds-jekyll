@@ -26,8 +26,20 @@
 @import "scss/packages/uswds-components";
 @import "scss/packages/uswds-utilities";
 
-// -------------------------------------
-// Import theme custom styles
+/*
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
 
 // default mode hide banner
 .usa-banner__content {
