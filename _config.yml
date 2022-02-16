@@ -25,9 +25,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://example.gov" # the base hostname & protocol for your site, e.g. https://example.com.
-# Required to support the jekyll-sitemap plugin below.
-# Uncomment the url line when ready to push to production. If using different branches for multiple
-# custom domains, edit this url parameter in the relevant branch to match the relevant custom domain.
+  # Required to support the jekyll-sitemap plugin below.
+  # Uncomment the url line when ready to push to production. If using different branches for multiple
+  # custom domains, edit this url parameter in the relevant branch to match the relevant custom domain.
 
 # Twitter handle. Only the handle, not the URL.
 twitter: 18F
@@ -67,6 +67,7 @@ twitter: 18F
 #################################################################
 dap:
   # agency: your-agency
+
   # Optional
   # subagency: your-subagency
 
@@ -105,6 +106,7 @@ secondary_navigation:
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
 searchgov:
+
   # Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
   endpoint: https://search.usa.gov
 

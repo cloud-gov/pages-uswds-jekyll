@@ -17,6 +17,10 @@
 @import "theme/uswds-theme-utilities";
 @import "theme/uswds-theme-components";
 
+// Set correct paths for use with asset pipeline
+$theme-font-path: "fonts";
+$theme-image-path: "img";
+
 // -------------------------------------
 // Import individual USWDS packages...
 @import "scss/packages/required";
