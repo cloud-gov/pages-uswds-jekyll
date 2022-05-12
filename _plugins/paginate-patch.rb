@@ -2,7 +2,14 @@ module Jekyll
   module PaginateV2::Generator
 
     #
-    # Fix for https://github.com/sverrirs/jekyll-paginate-v2/issues/209
+    # https://github.com/18F/federalist-uswds-jekyll/pull/260 introduced a
+    # patch that resolved an issue where paginated pages were using a single
+    # cached layout file, causing the wrong content to be displayed.
+    #
+    # A fix has been made to the plugin, however it has not been released as a
+    # new version yet. Once it is, this patch can be removed.
+    #
+    # Source issue: https://github.com/sverrirs/jekyll-paginate-v2/issues/209
     #
 
     class PaginationPage < Page
