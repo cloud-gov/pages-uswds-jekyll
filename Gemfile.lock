@@ -26,7 +26,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (10.4.2.0)
+    autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
