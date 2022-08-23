@@ -15,7 +15,7 @@
     "uswds": "^2.13.1"
   },
   "devDependencies": {
-    "pa11y-ci": "^2.4.0",
+    "pa11y-ci": "^3.0.1",
     "rimraf": "^3.0.2"
   }
 }
