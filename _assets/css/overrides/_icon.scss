@@ -1,6 +1,6 @@
 // Override USWDS mixin to use jekyll-assets asset_url()
 
-@mixin add-color-icon($icon-object, $contrast-bg) {
+@mixin add-color-icon($icon-object, $contrast-bg: "default") {
   $filename-base: map-get($icon-object, "name");
   $svg-height: map-get($icon-object, "svg-height");
   $svg-width: map-get($icon-object, "svg-width");
