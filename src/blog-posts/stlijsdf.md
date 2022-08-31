@@ -1,6 +1,6 @@
 ---
-title: stlijsdf
+title: this is a post title
 date: August 31, 2022
-author: drew
+author: drewbo
 ---
-a﻿sdfjiedlk
+this is a document body
