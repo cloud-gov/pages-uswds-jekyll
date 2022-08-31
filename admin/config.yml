@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: 18f/federalist-uswds-jekyll
-  base_url: https://federalistapp.18f.gov
+  repo: cloud-gov/pages-uswds-jekyll
+  base_url: https://pages.cloud.gov
   auth_endpoint: external/auth/github
-  preview_context: federalist/build
+  preview_context: pages/build
   branch: main
 
 media_folder: assets/uploads
