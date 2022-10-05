@@ -110,7 +110,7 @@ searchgov:
   # Only change this if you're using a CNAME. Learn more here: https://search.gov/manual/cname.html
   endpoint: https://search.usa.gov
 
-  # Replace this with your search.gov account.
+  # Replace this with your search.gov site handle.
   affiliate: federalist-uswds-example
 
   # Replace this with your access key.
