@@ -185,15 +185,14 @@ exclude:
   - Gemfile.lock
   - docker-compose.yml
   - Dockerfile
+  - assets/css
 
-assets:
-  autoprefixer:
-    browsers:
-      - "> 2%"
-      - "last 2 versions"
-      - "IE 11"
-      - "not dead"
-  compression: true
-  sources:
-    - node_modules/uswds/dist
-    - node_modules/netlify-cms/dist
+keep_files:
+  - assets/css/styles.css
+
+node_modules:
+  copy:
+  - source: uswds/dist/fonts/
+    target: assets/fonts
+  - source: uswds/dist/img/
+    target: assets/img
