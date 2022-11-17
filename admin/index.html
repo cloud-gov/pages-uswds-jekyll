@@ -8,7 +8,8 @@
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
-  {% asset netlify-cms.js %}
+  <script src="{{ 'netlify-cms.js' | relative_url }}"></script>
+
   <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
   <style>
     img[alt="Logo"] {

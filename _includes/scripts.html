@@ -23,7 +23,7 @@
 </script>
 {% endif %}
 
-{% asset app.js %}
+<script src="{{ 'uswds/dist/js/uswds.js' | node_module_url' | relative_url }}"></script>
 
 {% if site.searchgov %}
   {% if site.searchgov.suggestions == true %}
