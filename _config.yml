@@ -196,3 +196,5 @@ node_modules:
     target: assets/fonts
   - source: uswds/dist/img/
     target: assets/img
+  - source: netlify-cms/dist/
+    target: admin
