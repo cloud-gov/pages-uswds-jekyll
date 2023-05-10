@@ -186,17 +186,12 @@ exclude:
   - docker-compose.yml
   - Dockerfile
 
-# assets:
-#   autoprefixer:
-#     browsers:
-#       - "> 2%"
-#       - "last 2 versions"
-#       - "IE 11"
-#       - "not dead"
-#   compression: true
-#   sources:
-#     - node_modules/uswds/dist
-#     - node_modules/netlify-cms/dist
+autoprefixer:
+  browsers:
+    - "> 2%"
+    - "last 2 versions"
+    - "IE 11"
+    - "not dead"
 
 sass:
   source_dir: _sass
