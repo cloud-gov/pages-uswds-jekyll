@@ -1,3 +1,6 @@
+---
+---
+// https://jekyllrb.com/docs/assets/
 /*
 * * * * * ==============================
 * * * * * ==============================
@@ -18,13 +21,12 @@
 @import "theme/uswds-theme-components";
 
 // Set correct paths for use with asset pipeline
-$theme-font-path: "fonts";
-$theme-image-path: "img";
+$theme-font-path: "../uswds/fonts";
+$theme-image-path: "../uswds/img";
 
 // -------------------------------------
 // Import individual USWDS packages...
 @import "scss/packages/required";
-@import "overrides/all";
 @import "scss/packages/global";
 
 @import "scss/packages/uswds-components";

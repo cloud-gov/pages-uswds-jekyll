@@ -4,3 +4,5 @@ _site
 node_modules
 .bundle
 .jekyll-cache/
+assets/uswds/
+assets/js/uswds*
