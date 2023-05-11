@@ -9,7 +9,7 @@ backend:
 media_folder: assets/uploads
 public_folder: /images/uploads
 publish_mode: editorial_workflow
-logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
+logo_url: https://cloud.gov/assets/images/pages/federalist-logo.png
 
 collections:
   - label: Posts
