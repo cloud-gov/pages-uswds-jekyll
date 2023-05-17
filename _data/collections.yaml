@@ -7,11 +7,11 @@
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: USDA
-  url: http://usda.gov/
+  url: https://usda.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Performance.gov
-  url: http://performance.gov/
+  url: https://performance.gov/
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
 
 - name: Login.gov

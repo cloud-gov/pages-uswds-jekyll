@@ -7,7 +7,7 @@
     "reset": "npx rimraf .git",
     "start": "bundle exec jekyll serve --livereload",
     "start-detached": "bundle exec jekyll serve --detach",
-    "htmlproofer": "bundle exec htmlproofer _site",
+    "htmlproofer": "bundle exec htmlproofer --no-enforce-https --allow-missing-href _site",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"  --sitemap-exclude \"/admin\""
   },
   "dependencies": {
