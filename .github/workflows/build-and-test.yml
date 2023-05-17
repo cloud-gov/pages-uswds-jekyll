@@ -36,8 +36,8 @@ jobs:
       - name: Install NPM dependencies.
         run: npm install
 
-      - name: Build and start up jekyll server.
-        run: npm run build && npm run start-detached
+      - name: Start up jekyll server.
+        run: npm run start-detached
 
       - name: Run pa11y-ci.
         run: npm run pa11y-ci:sitemap
