@@ -118,7 +118,7 @@ ga:
 
 - We try to keep configuration options to a minimum so you can easily change functionality. You should review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They refer to the agency name and contact information. The rest of `_config.yml` has a range of more advanced options.
 
-- The contents inside `assets/` folder store your Javascript, SCSS/CSS, images, and other media assets are managed by  [jekyll-assets](https://github.com/envygeeks/jekyll-assets).  Assets are combined, compressed, and automatically available in your theme
+- The `assets/` folder stores your Javascript, CSS, images, and other media assets. Additional SASS partials should be added to the `_sass/` folder where they can be imported. USWDS assets are automatically copied into the `assets/` folder when running `jekyll serve` or `jekyll build`
 
 - If you look at `package.json` you will see that the `npm run federalist` command that will run when running on the Federalist platform.
 
