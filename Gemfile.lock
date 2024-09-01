@@ -9,7 +9,7 @@ GEM
       console (~> 1.10)
       io-event (~> 1.1)
       timers (~> 4.1)
-    autoprefixer-rails (10.4.13.0)
+    autoprefixer-rails (10.4.19.0)
       execjs (~> 2)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
