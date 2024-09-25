@@ -1,13 +1,4 @@
-<!--
-  Federalist recommends you use Continuous Integration to automatically test
-  and validate any new changes to your site. CircleCI is free for open source
-  projcets. You should replace this badge with your own.
-
-  https://circleci.com/
--->
-[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
-
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=18F/federalist-uswds-jekyll)](https://dependabot.com)
+# DEPRECATED - This repository is no longer in use and will not be maintained.
 
 # Pages + U.S. Web Design System + Jekyll
 
@@ -42,7 +33,7 @@ use uswds-jekyll.
 
 ## Key Functionality
 This repository contains the following examples and functionality:
- 
+
 ✅  Publish blog posts, press releases, announcements, etc. To modify this code, check out `blog/index.html`, which manages how the posts are listed. You should then check out `_layouts/post.html` to see how individual posts are structured.
 
 ✅ Publish single one-off pages. Instead of creating lots of folders throughout the root directory, you should put single pages in `_pages` folder and change the `permalink` at the top of each page. Use sub-folders only when you really need to.
@@ -179,7 +170,7 @@ This will create a copy of this repo in a Github repository of your choice but y
 #### With locally installed `node` and `ruby`
     $ npm install
     $ bundle install
-    $ npm start 
+    $ npm start
     OR
     $ bundle exec jekyll serve
 
@@ -216,7 +207,7 @@ site.
 
 - [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
 - [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
-- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
+- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov)
 
 
 ## Contributing
